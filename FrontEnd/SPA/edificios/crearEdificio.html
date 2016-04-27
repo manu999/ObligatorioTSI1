@@ -1,0 +1,35 @@
+﻿<div>
+    <h2>{{title}}</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <h4>Nombre</h4>
+                <input ng-model="edificio.nombre" />
+            </div>
+            <div class="row">
+                <h4>Vida</h4>
+                <input ng-model="edificio.vida" />
+            </div>
+            <div class="row">
+                <h4>Ptos. ataque</h4>
+                <input ng-model="edificio.ataque" />
+            </div>
+            <div class="row">
+                <h4>Ptos. defensa</h4>
+                <input ng-model="edificio.defensa" />
+            </div>
+            <div class="row">
+                <h4>Tasa de produccion</h4>
+                <input ng-model="edificio.tasa" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-2"><img width="50" height="50" ng-src="{{user.avatar}}" /></div>
+            <input type="file" class="" file-model="user.avatar" />
+        </div>
+    </div>
+    <div class="row">
+        <button onclick="">Save</button>
+    </div>
+</div>

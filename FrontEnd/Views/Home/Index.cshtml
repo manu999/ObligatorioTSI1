@@ -1,0 +1,30 @@
+﻿<div ng-app="tsi">
+    <div>
+        <div class="container">
+            <a href="crearEdificio">Crear Edificio</a>
+            <a href="listarEdificios">Listar Edificios</a>
+            <div ng-view></div>
+        </div>
+    </div>
+    <script type="text/ng-template" id="listarEdificios.html">
+        <div>
+            <h2>{{title}}</h2>
+            <div class="row">
+                <div class="col-sm-4 col-md-2">Imagen</div>
+                <div class="col-sm-4 col-md-2">Nombre</div>
+                <div class="col-sm-4 col-md-2">Vida</div>
+                <div class="col-sm-4 col-md-2">Ataque</div>
+                <div class="col-sm-4 col-md-2">Defensa</div>
+                <div class="col-sm-4 col-md-2">Tasa</div>
+            </div>
+            <div class="row" ng-repeat="e in listaEdificios">
+                <div class="col-sm-4 col-md-2"><img width="50" height="50" ng-src="{{e.Imagen}}" /></div>
+                <div class="col-sm-4 col-md-2">{{e.Nombre}}</div>
+                <div class="col-sm-4 col-md-2">{{e.Vida}}</div>
+                <div class="col-sm-4 col-md-2">{{e.Ataque}}</div>
+                <div class="col-sm-4 col-md-2">{{e.Defensa}}</div>
+                <div class="col-sm-4 col-md-2">{{e.Tasa}}</div>
+            </div>
+        </div>
+    </script>
+</div>
